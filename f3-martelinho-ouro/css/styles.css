@@ -1,0 +1,448 @@
+/* ==========================================================================
+   F3 MARTELINHO DE OURO - ESTILOS PERSONALIZADOS & DESIGN SYSTEM PREMIUM
+   Estética Automotiva de Alto Padrão • Obsidian Atelier Dark Theme
+   ========================================================================== */
+
+/* --- VARIÁVEIS CSS --- */
+:root {
+  --bg-surface: #10131a;
+  --bg-surface-lowest: #0b0e14;
+  --bg-surface-low: #191c22;
+  --bg-surface-container: #1d2026;
+  --bg-surface-high: #272a31;
+  --bg-surface-highest: #32353c;
+
+  --color-primary: #f2ca50;
+  --color-primary-container: #d4af37;
+  --color-primary-hover: #ffe088;
+  --color-gold-glow: rgba(242, 202, 80, 0.25);
+  
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #128c7e;
+  --color-whatsapp-glow: rgba(37, 211, 102, 0.35);
+
+  --color-instagram-start: #f09433;
+  --color-instagram-mid: #e6683c;
+  --color-instagram-accent: #dc2743;
+  --color-instagram-end: #bc1888;
+  
+  --color-text-main: #e1e2eb;
+  --color-text-muted: #d0c5af;
+  --color-text-subtle: #99907c;
+
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-surface);
+  color: var(--color-text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- SELEÇÃO DE TEXTO --- */
+::selection {
+  background: var(--color-primary);
+  color: #1a1500;
+}
+
+/* --- SCROLLBAR ELEGANTE --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-surface-lowest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-surface-high);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-container);
+}
+
+/* --- ILUMINAÇÃO AMBIENTE & FUNDO VIVO --- */
+.bg-ambient-grid {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(242, 202, 80, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 85% 30%, rgba(37, 211, 102, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 15% 70%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
+    linear-gradient(to bottom, #10131a, #0b0e14);
+}
+
+.ambient-light-halo {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  opacity: 0.6;
+  animation: floatAmbient 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatAmbient {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.7; }
+  100% { transform: translate(-20px, 30px) scale(0.95); opacity: 0.6; }
+}
+
+/* Linhas sutis de inspeção óptica LED */
+.light-tunnel-lines {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 80px
+  );
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* --- TIPOGRAFIA & DESTAQUES DOURADOS --- */
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff2be 0%, #f2ca50 40%, #d4af37 70%, #ffb95f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gold-glow {
+  text-shadow: 0 0 25px rgba(242, 202, 80, 0.35);
+}
+
+/* --- BOTÕES & CTAS PREMIUM --- */
+
+/* WhatsApp Hero & Header CTA */
+.btn-whatsapp-premium {
+  position: relative;
+  background: linear-gradient(135deg, #2ae06c 0%, #20ba5a 50%, #159b48 100%);
+  color: #04240f;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.3s var(--ease-spring);
+  overflow: hidden;
+}
+
+.btn-whatsapp-premium::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.btn-whatsapp-premium:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  color: #02180a;
+}
+
+.btn-whatsapp-premium:hover::before {
+  opacity: 1;
+}
+
+.btn-whatsapp-premium:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* WhatsApp Pulse Glow Animation */
+.whatsapp-pulse-ring {
+  position: relative;
+}
+
+.whatsapp-pulse-ring::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid rgba(37, 211, 102, 0.6);
+  animation: pulseWhatsapp 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes pulseWhatsapp {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  70% { transform: scale(1.15); opacity: 0; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+/* Instagram Button */
+.btn-instagram-premium {
+  position: relative;
+  background: rgba(39, 42, 49, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--color-text-main);
+  transition: all 0.3s var(--ease-spring);
+  backdrop-blur: 8px;
+}
+
+.btn-instagram-premium::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-instagram-premium:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(225, 48, 108, 0.35);
+}
+
+.btn-instagram-premium:hover::before {
+  opacity: 1;
+}
+
+.btn-instagram-premium:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Botão Rota Google Maps */
+.btn-maps-premium {
+  background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
+  color: #241a00;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(242, 202, 80, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.3s var(--ease-spring);
+}
+
+.btn-maps-premium:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(242, 202, 80, 0.45);
+  background: linear-gradient(135deg, #ffe088 0%, #e9c349 100%);
+}
+
+.btn-maps-premium:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* --- BOLINHA ONLINE PULSANTE --- */
+.status-indicator-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-whatsapp);
+}
+
+.status-indicator-dot::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background-color: var(--color-whatsapp);
+  opacity: 0.75;
+  animation: pingDot 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pingDot {
+  0% { transform: scale(1); opacity: 0.8; }
+  75%, 100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* --- CARDS & MICROINTERAÇÕES --- */
+.card-interactive {
+  position: relative;
+  background: var(--bg-surface-low);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  transition: transform 0.35s var(--ease-spring), 
+              box-shadow 0.35s ease, 
+              border-color 0.35s ease, 
+              background-color 0.35s ease;
+  overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-interactive:hover {
+    transform: translateY(-4px);
+    background: var(--bg-surface-container);
+    border-color: rgba(242, 202, 80, 0.25);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(242, 202, 80, 0.1);
+  }
+
+  .card-interactive:hover .card-icon-bounce {
+    transform: scale(1.1) translateY(-2px);
+  }
+
+  .card-interactive:hover .card-arrow-shift {
+    transform: translateX(4px);
+  }
+}
+
+.card-interactive:active {
+  transform: scale(0.99);
+}
+
+/* Efeito 3D Hero Stage (Perspective) */
+.hero-stage-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.hero-card-tilt {
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+/* --- COMPARADOR ANTES & DEPOIS INTERATIVO --- */
+.before-after-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  cursor: ew-resize;
+  background-color: var(--bg-surface-high);
+}
+
+.before-after-img-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.before-after-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  border-right: 2px solid var(--color-primary);
+  box-shadow: 2px 0 10px rgba(242, 202, 80, 0.6);
+  z-index: 10;
+  will-change: width;
+}
+
+.before-after-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #10131a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px rgba(242, 202, 80, 0.7);
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* --- LOCALIZAÇÃO & MAPA INTERATIVO --- */
+.map-interactive-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.4s var(--ease-spring), box-shadow 0.4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .map-interactive-wrapper:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(242, 202, 80, 0.15);
+  }
+  .map-interactive-wrapper:hover .map-zoom-target {
+    transform: scale(1.04);
+  }
+}
+
+.map-zoom-target {
+  transition: transform 0.7s var(--ease-spring);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- MENU MOBILE DRAWER & SAFE AREA --- */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 14, 20, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  padding-top: max(1.5rem, env(safe-area-inset-top));
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s var(--ease-spring);
+}
+
+.mobile-drawer.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Safe area no CTA flutuante */
+.floating-cta-wrap {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* --- ACESSIBILIDADE & FOCUS STATES --- */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* --- PREFERS-REDUCED-MOTION --- */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

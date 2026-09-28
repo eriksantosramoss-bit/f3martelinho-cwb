@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#10131a" />
+  
+  <title>F3 Martelinho de Ouro | Centro Automotivo em Curitiba • Nota 4.9 ★</title>
+  <meta name="description" content="Especialistas em Martelinho de Ouro de Alta Precisão (DSP/PDR), reparo de danos por chuva de granizo e micro-funilaria artesanal no Centro de Curitiba. Orçamento rápido pelo WhatsApp!" />
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="F3 Martelinho de Ouro | Curitiba - Especialistas em DSP & Granizo" />
+  <meta property="og:description" content="Preserve 100% da originalidade da lataria do seu veículo. Mais de 290 avaliações 5 estrelas no Centro de Curitiba." />
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Google Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#32353c",
+            "on-secondary-fixed-variant": "#653e00",
+            "surface": "#10131a",
+            "on-background": "#e1e2eb",
+            "tertiary-fixed": "#6bff8f",
+            "on-secondary-container": "#5b3800",
+            "surface-tint": "#e9c349",
+            "secondary-container": "#ee9800",
+            "secondary": "#ffb95f",
+            "surface-container-high": "#272a31",
+            "secondary-fixed-dim": "#ffb95f",
+            "primary-container": "#d4af37",
+            "on-primary": "#3c2f00",
+            "inverse-on-surface": "#2e3037",
+            "outline": "#99907c",
+            "background": "#10131a",
+            "error-container": "#93000a",
+            "surface-container-low": "#191c22",
+            "surface-bright": "#363940",
+            "on-error-container": "#ffdad6",
+            "tertiary-container": "#2ecc64",
+            "tertiary": "#25d366",
+            "primary-fixed-dim": "#e9c349",
+            "surface-container-highest": "#32353c",
+            "primary": "#f2ca50",
+            "on-secondary-fixed": "#2a1700",
+            "on-surface": "#e1e2eb",
+            "on-surface-variant": "#d0c5af",
+            "inverse-surface": "#e1e2eb",
+            "on-tertiary-fixed-variant": "#005321",
+            "on-tertiary": "#003915",
+            "on-primary-fixed": "#241a00",
+            "on-tertiary-container": "#005020",
+            "surface-container-lowest": "#0b0e14",
+            "on-secondary": "#472a00",
+            "surface-container": "#1d2026",
+            "primary-fixed": "#ffe088",
+            "on-tertiary-fixed": "#002109",
+            "secondary-fixed": "#ffddb8",
+            "inverse-primary": "#735c00",
+            "outline-variant": "#4d4635",
+            "error": "#ffb4ab",
+            "surface-dim": "#10131a"
+          },
+          fontFamily: {
+            display: ["Outfit", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          maxWidth: {
+            'site': '1320px'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- ESTILOS COMPLETOS INLINE PARA ZERO ERROS 404 NO DEPLOY -->
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & ESTILOS PREMIUM F3 MARTELINHO DE OURO
+       ========================================================================== */
+    :root {
+      --bg-surface: #10131a;
+      --bg-surface-lowest: #0b0e14;
+      --bg-surface-low: #191c22;
+      --bg-surface-container: #1d2026;
+      --bg-surface-high: #272a31;
+      --bg-surface-highest: #32353c;
+
+      --color-primary: #f2ca50;
+      --color-primary-container: #d4af37;
+      --color-primary-hover: #ffe088;
+      
+      --color-whatsapp: #25d366;
+      --color-whatsapp-dark: #128c7e;
+      --color-whatsapp-glow: rgba(37, 211, 102, 0.35);
+
+      --color-text-main: #e1e2eb;
+      --color-text-muted: #d0c5af;
+      --color-text-subtle: #99907c;
+
+      --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--bg-surface);
+      color: var(--color-text-main);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background: var(--color-primary);
+      color: #1a1500;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-surface-lowest);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg-surface-high);
+      border-radius: 4px;
+    }
+
+    /* --- ILUMINAÇÃO AMBIENTE & FUNDO VIVO --- */
+    .bg-ambient-grid {
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(242, 202, 80, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 85% 30%, rgba(37, 211, 102, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 15% 70%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
+        linear-gradient(to bottom, #10131a, #0b0e14);
+    }
+
+    .ambient-light-halo {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      opacity: 0.6;
+      animation: floatAmbient 12s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatAmbient {
+      0% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+      50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.7; }
+      100% { transform: translate(-20px, 30px) scale(0.95); opacity: 0.6; }
+    }
+
+    .light-tunnel-lines {
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.015) 0px,
+        rgba(255, 255, 255, 0.015) 1px,
+        transparent 1px,
+        transparent 80px
+      );
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    /* --- TIPOGRAFIA & DESTAQUES DOURADOS --- */
+    .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #fff2be 0%, #f2ca50 40%, #d4af37 70%, #ffb95f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* --- BOTÕES & CTAS PREMIUM --- */
+    .btn-whatsapp-premium {
+      position: relative;
+      background: linear-gradient(135deg, #2ae06c 0%, #20ba5a 50%, #159b48 100%);
+      color: #04240f !important;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      transition: all 0.3s var(--ease-spring);
+      overflow: hidden;
+    }
+
+    .btn-whatsapp-premium:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+      color: #02180a !important;
+    }
+
+    .btn-whatsapp-premium:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .whatsapp-pulse-ring {
+      position: relative;
+    }
+
+    .whatsapp-pulse-ring::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: inherit;
+      border: 2px solid rgba(37, 211, 102, 0.6);
+      animation: pulseWhatsapp 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulseWhatsapp {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      70% { transform: scale(1.15); opacity: 0; }
+      100% { transform: scale(1.2); opacity: 0; }
+    }
+
+    .btn-instagram-premium {
+      position: relative;
+      background: rgba(39, 42, 49, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--color-text-main);
+      transition: all 0.3s var(--ease-spring);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-instagram-premium:hover {
+      transform: translateY(-2px);
+      color: #ffffff;
+      border-color: #e1306c;
+      box-shadow: 0 4px 20px rgba(225, 48, 108, 0.35);
+    }
+
+    .btn-maps-premium {
+      background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
+      color: #241a00 !important;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(242, 202, 80, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      transition: all 0.3s var(--ease-spring);
+    }
+
+    .btn-maps-premium:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(242, 202, 80, 0.45);
+      background: linear-gradient(135deg, #ffe088 0%, #e9c349 100%);
+    }
+
+    /* --- BOLINHA ONLINE PULSANTE --- */
+    .status-indicator-dot {
+      position: relative;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--color-whatsapp);
+    }
+
+    .status-indicator-dot::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background-color: var(--color-whatsapp);
+      opacity: 0.75;
+      animation: pingDot 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes pingDot {
+      0% { transform: scale(1); opacity: 0.8; }
+      75%, 100% { transform: scale(2.4); opacity: 0; }
+    }
+
+    /* --- CARDS & MICROINTERAÇÕES --- */
+    .card-interactive {
+      position: relative;
+      background: var(--bg-surface-low);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      transition: transform 0.35s var(--ease-spring), 
+                  box-shadow 0.35s ease, 
+                  border-color 0.35s ease, 
+                  background-color 0.35s ease;
+      overflow: hidden;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .card-interactive:hover {
+        transform: translateY(-4px);
+        background: var(--bg-surface-container);
+        border-color: rgba(242, 202, 80, 0.25);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(242, 202, 80, 0.1);
+      }
+    }
+
+    .hero-stage-3d {
+      perspective: 1200px;
+      transform-style: preserve-3d;
+    }
+
+    .hero-card-tilt {
+      transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+      will-change: transform;
+    }
+
+    /* --- COMPARADOR ANTES & DEPOIS INTERATIVO --- */
+    .before-after-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 1rem;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: pan-y;
+      cursor: ew-resize;
+      background-color: var(--bg-surface-high);
+    }
+
+    .before-after-img-wrap {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .before-after-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      overflow: hidden;
+      border-right: 2px solid var(--color-primary);
+      box-shadow: 2px 0 10px rgba(242, 202, 80, 0.6);
+      z-index: 10;
+      will-change: width;
+    }
+
+    .before-after-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #10131a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 16px rgba(242, 202, 80, 0.7);
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    /* --- LOCALIZAÇÃO & MAPA INTERATIVO --- */
+    .map-interactive-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.4s var(--ease-spring), box-shadow 0.4s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .map-interactive-wrapper:hover {
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(242, 202, 80, 0.15);
+      }
+      .map-interactive-wrapper:hover .map-zoom-target {
+        transform: scale(1.04);
+      }
+    }
+
+    .map-zoom-target {
+      transition: transform 0.7s var(--ease-spring);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* --- MENU MOBILE DRAWER & SAFE AREA --- */
+    .mobileDrawer {
+      transition: opacity 0.3s ease, transform 0.3s var(--ease-spring);
+    }
+
+    .mobileDrawer.is-open {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      transform: translateY(0) !important;
+    }
+
+    .floating-cta-wrap {
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+
+  <!-- ==========================================================================
+       HEADER & NAVEGAÇÃO SUPERIOR
+       ========================================================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0b0e14]/90 backdrop-blur-md border-b border-white/5 shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all">
+    <div class="max-w-site mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      
+      <!-- LOGO & STATUS -->
+      <div class="flex items-center gap-3 sm:gap-5 shrink-0">
+        <a href="#inicio" class="flex items-center gap-2 sm:gap-3 group focus:outline-none" aria-label="F3 Martelinho de Ouro Início">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface-container-high border border-primary/30 flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(242,202,80,0.2)] group-hover:border-primary transition-all">
+            <svg class="w-full h-full" viewBox="0 0 70 70" fill="none">
+              <polygon points="15,8 55,8 65,35 55,62 15,62 5,35" stroke="#f2ca50" stroke-width="3" fill="#131722" />
+              <path d="M22,20 L48,20 M22,34 L42,34 M22,20 L22,50" stroke="#f2ca50" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M38,40 Q48,38 48,46 Q48,52 38,52" stroke="#f2ca50" stroke-width="3" fill="none" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-on-surface uppercase group-hover:text-primary transition-colors">
+              F3 Martelinho
+            </span>
+            <span class="text-[10px] sm:text-xs font-semibold text-primary tracking-widest uppercase">
+              Centro Automotivo
+            </span>
+          </div>
+        </a>
+
+        <!-- Live Status Badge (Desktop) -->
+        <div class="hidden xl:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high/90 border border-white/5 js-live-status">
+          <span class="status-indicator-dot"></span>
+          <span class="text-xs font-medium text-tertiary js-status-text">Aberto agora</span>
+          <span class="text-outline text-xs">•</span>
+          <span class="text-xs text-on-surface-variant font-medium">Seg a Sex: 08h às 18h</span>
+        </div>
+      </div>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-medium" aria-label="Navegação Principal">
+        <a href="#inicio" class="px-3 py-1.5 rounded-lg text-primary font-semibold hover:text-on-surface hover:bg-white/5 transition-colors">Início</a>
+        <a href="#especialidades" class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Especialidades</a>
+        <a href="#antes-e-depois" class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Antes &amp; Depois</a>
+        <a href="#diferenciais" class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Diferenciais</a>
+        <a href="#avaliacoes" class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Avaliações (4.9 ★)</a>
+        <a href="#localizacao-e-horarios" class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Localização &amp; Horários</a>
+      </nav>
+
+      <!-- CTA ACTION BUTTONS (WHATSAPP + INSTAGRAM) -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/martelinhodeouro.f3/" target="_blank" rel="noopener noreferrer" 
+           class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-full btn-instagram-premium text-xs sm:text-sm font-medium"
+           title="Siga a F3 Martelinho de Ouro no Instagram" aria-label="Instagram F3 Martelinho">
+          <svg class="w-4 h-4 fill-current text-[#e1306c]" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span class="font-semibold">Instagram</span>
+        </a>
+
+        <!-- WhatsApp Principal CTA -->
+        <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20ve%C3%ADculo" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full btn-whatsapp-premium whatsapp-pulse-ring text-xs sm:text-sm"
+           aria-label="Solicitar Orçamento no WhatsApp">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span class="font-bold tracking-tight">Orçamento WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuOpen" class="lg:hidden p-2 rounded-xl bg-surface-container-high text-on-surface hover:text-primary transition-colors focus:outline-none" aria-label="Abrir menu de navegação">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE DRAWER OVERLAY
+       ========================================================================== -->
+  <div id="mobileDrawer" class="mobileDrawer fixed inset-0 bg-[#0b0e14]/95 backdrop-blur-xl z-[100] flex flex-col justify-between p-6 opacity-0 pointer-events-none transition-all duration-300" aria-hidden="true">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-surface-container-high border border-primary/30 flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(242,202,80,0.2)]">
+            <svg class="w-full h-full" viewBox="0 0 70 70" fill="none">
+              <polygon points="15,8 55,8 65,35 55,62 15,62 5,35" stroke="#f2ca50" stroke-width="3" fill="#131722" />
+              <path d="M22,20 L48,20 M22,34 L42,34 M22,20 L22,50" stroke="#f2ca50" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-display font-bold text-lg text-on-surface uppercase block">F3 Martelinho</span>
+            <span class="text-[10px] font-semibold text-primary tracking-widest uppercase">Centro Automotivo</span>
+          </div>
+        </div>
+        <button id="mobileMenuClose" class="p-2 rounded-full bg-surface-container-high text-on-surface hover:text-primary focus:outline-none" aria-label="Fechar menu">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+
+      <div class="my-4 py-2 px-3 rounded-xl bg-surface-container-low border border-white/5 flex items-center gap-2 js-live-status">
+        <span class="status-indicator-dot"></span>
+        <span class="text-xs font-medium text-tertiary js-status-text">Aberto agora • Atendimento Imediato</span>
+      </div>
+
+      <nav class="flex flex-col space-y-1.5 pt-2" aria-label="Menu Mobile">
+        <a href="#inicio" class="flex items-center justify-between px-4 py-3.5 rounded-xl text-base font-medium text-on-surface hover:bg-white/5 hover:text-primary transition-colors">
+          <span>Início</span>
+          <span class="material-symbols-outlined text-[20px] text-outline">chevron_right</span>
+        </a>
+        <a href="#especialidades" class="flex items-center justify-between px-4 py-3.5 rounded-xl text-base font-medium text-on-surface hover:bg-white/5 hover:text-primary transition-colors">
+          <span>Especialidades &amp; Serviços</span>
+          <span class="material-symbols-outlined text-[20px] text-outline">chevron_right</span>
+        </a>
+        <a href="#antes-e-depois" class="flex items-center justify-between px-4 py-3.5 rounded-xl text-base font-medium text-on-surface hover:bg-white/5 hover:text-primary transition-colors">
+          <span>Galeria Antes &amp; Depois</span>
+          <span class="material-symbols-outlined text-[20px] text-outline">chevron_right</span>
+        </a>
+        <a href="#diferenciais" class="flex items-center justify-between px-4 py-3.5 rounded-xl text-base font-medium text-on-surface hover:bg-white/5 hover:text-primary transition-colors">
+          <span>Nossos Diferenciais</span>
+          <span class="material-symbols-outlined text-[20px] text-outline">chevron_right</span>
+        </a>
+        <a href="#avaliacoes" class="flex items-center justify-between px-4 py-3.5 rounded-xl text-base font-medium text-on-surface hover:bg-white/5 hover:text-primary transition-colors">
+          <span>Avaliações dos Clientes (4.9 ★)</span>
+          <span class="material-symbols-outlined text-[20px] text-outline">chevron_right</span>
+        </a>
+        <a href="#localizacao-e-horarios" class="flex items-center justify-between px-4 py-3.5 rounded-xl text-base font-medium text-on-surface hover:bg-white/5 hover:text-primary transition-colors">
+          <span>Localização &amp; Horários</span>
+          <span class="material-symbols-outlined text-[20px] text-outline">chevron_right</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-white/10">
+      <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20carro" target="_blank" rel="noopener noreferrer" 
+         class="w-full flex items-center justify-center gap-2.5 py-4 rounded-full btn-whatsapp-premium font-bold text-sm shadow-lg">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Solicitar Orçamento no WhatsApp</span>
+      </a>
+
+      <a href="https://www.instagram.com/martelinhodeouro.f3/" target="_blank" rel="noopener noreferrer" 
+         class="w-full flex items-center justify-center gap-2.5 py-3.5 rounded-full btn-instagram-premium font-semibold text-sm">
+        <svg class="w-4 h-4 fill-current text-[#e1306c]" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        <span>Instagram Oficial @martelinhodeouro.f3</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CONTEÚDO PRINCIPAL
+       ========================================================================== -->
+  <main class="w-full pt-20 flex-1">
+    
+    <!-- 1. HERO SECTION -->
+    <section id="inicio" class="relative w-full overflow-hidden bg-ambient-grid px-4 sm:px-6 lg:px-8 pt-10 sm:pt-16 pb-16 sm:pb-24">
+      
+      <div class="light-tunnel-lines"></div>
+      <div class="ambient-light-halo -top-20 left-1/2 -translate-x-1/2 w-[350px] sm:w-[700px] h-[350px] sm:h-[600px] bg-primary/10"></div>
+      <div class="ambient-light-halo top-1/3 -right-20 w-[250px] sm:w-[450px] h-[250px] sm:h-[450px] bg-secondary-container/10"></div>
+      <div class="ambient-light-halo bottom-10 left-10 w-[200px] sm:w-[350px] h-[200px] sm:h-[350px] bg-tertiary/10"></div>
+
+      <div class="max-w-site mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+        
+        <!-- Left Column: Copy, Titular e CTAs -->
+        <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high/90 border border-primary/20 shadow-[0_0_20px_rgba(242,202,80,0.15)]">
+            <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            <span class="font-display font-semibold text-xs sm:text-sm text-primary uppercase tracking-wider">
+              Oficina Referência em Curitiba • Nota 4.9 ★ no Google
+            </span>
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-on-surface tracking-tight leading-[1.15] sm:leading-[1.12]">
+            A Perfeição Original da Lata do seu Veículo, 
+            <span class="text-gold-gradient block mt-1">Sem Repintura e Sem Marcas.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Especialistas em Martelinho de Ouro de Alta Precisão (DSP), reparo de danos severos por granizo e micro-funilaria artesanal no Centro de Curitiba. Preservamos 100% da integridade e originalidade de fábrica do seu automóvel.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20r%C3%A1pido%20para%20meu%20carro" 
+               target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-center gap-2.5 px-6 sm:px-8 py-4 rounded-full btn-whatsapp-premium text-sm sm:text-base font-bold shadow-[0_0_30px_rgba(37,211,102,0.4)] group">
+              <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Solicitar Orçamento pelo WhatsApp</span>
+              <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+
+            <a href="#antes-e-depois" class="flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-sm sm:text-base font-semibold border border-white/5 transition-all">
+              <span>Ver Casos Antes &amp; Depois</span>
+              <span class="material-symbols-outlined text-[18px]">expand_more</span>
+            </a>
+
+          </div>
+
+          <!-- Trust Metric Badges -->
+          <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container/70 border border-white/5 backdrop-blur-sm">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-inner">
+                <span class="material-symbols-outlined text-[22px]">verified</span>
+              </div>
+              <div>
+                <div class="font-display font-bold text-sm sm:text-base text-on-surface leading-tight">4.9 ★★★★★</div>
+                <span class="text-xs text-on-surface-variant">294 avaliações reais</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container/70 border border-white/5 backdrop-blur-sm">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0 shadow-inner">
+                <span class="material-symbols-outlined text-[22px]">bolt</span>
+              </div>
+              <div>
+                <span class="font-display font-bold text-sm sm:text-base text-on-surface block leading-tight">Atendimento Ágil</span>
+                <span class="text-xs text-on-surface-variant">Avaliação prévia por fotos</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container/70 border border-white/5 backdrop-blur-sm">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0 shadow-inner">
+                <span class="material-symbols-outlined text-[22px]">schedule_send</span>
+              </div>
+              <div>
+                <span class="font-display font-bold text-sm sm:text-base text-on-surface block leading-tight">Entrega no Prazo</span>
+                <span class="text-xs text-on-surface-variant">Pontualidade rigorosa</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Stage with 3D Parallax Card -->
+        <div class="lg:col-span-5 relative mt-6 lg:mt-0 hero-stage-3d">
+          
+          <div class="absolute inset-0 bg-primary/15 rounded-3xl blur-2xl transform rotate-1 scale-95 pointer-events-none"></div>
+
+          <div class="hero-card-tilt relative rounded-2xl bg-surface-container-low border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-hidden">
+            
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdiAM1JabQmPr3g710Hb0e9l0gh9T-UhZeS1Tg_i31id9xM-XEln-b29qT4w3Yv-tlzkUGs7L3CD82DvdGReJX1l5OW4CfAuoCXxB4quWf2dy7k1mqqgKM5I_DST8k4uEaTVpDnfhnhd6vwxFhUySPvrFCyGiBG0zQ2XmK_U3HKaaA3b_6h0Frwz4MkDKW_G7Q9JDt73w_ENke_eB01wJJQT3_3Q6nFogVkhfYhZkevEEeLNVDUly3" 
+                   alt="Inspeção minuciosa com túnel de iluminação linear LED para martelinho de ouro de precisão" 
+                   class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" 
+                   loading="eager" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+              
+              <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-surface-container-lowest/85 backdrop-blur-md border border-white/10 flex items-center gap-2">
+                <span class="status-indicator-dot"></span>
+                <span class="font-display font-semibold text-xs text-on-surface uppercase tracking-wider">Túnel de Inspeção Óptica</span>
+              </div>
+            </div>
+
+            <div class="p-4 space-y-2.5">
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high/90 border border-white/5 shadow-sm">
+                <div class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[20px]">shield</span>
+                  <span class="font-display font-semibold text-xs sm:text-sm text-on-surface">Dano Zero à Pintura Original</span>
+                </div>
+                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">100% DSP</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high/90 border border-white/5 shadow-sm">
+                <div class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[20px]">precision_manufacturing</span>
+                  <span class="font-display font-semibold text-xs sm:text-sm text-on-surface">Tecnologia Alemã de Tração</span>
+                </div>
+                <span class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Micrométrico</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high/90 border border-white/5 shadow-sm">
+                <div class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[20px]">electric_car</span>
+                  <span class="font-display font-semibold text-xs sm:text-sm text-on-surface truncate">Especialista Elétricos: BYD, Porsche, BMW</span>
+                </div>
+                <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Certificado</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO: SOBRE & DIFERENCIAIS ARTESANAIS (4 PILARES) -->
+    <section id="diferenciais" class="w-full bg-surface px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto space-y-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="space-y-2 max-w-2xl">
+            <span class="font-display font-bold text-xs sm:text-sm text-primary uppercase tracking-widest">Excelência em Cada Milímetro</span>
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-on-surface">A Arte do Martelinho de Ouro com Rigor Cirúrgico</h2>
+          </div>
+          <p class="text-sm sm:text-base text-on-surface-variant max-w-md">
+            Diferente da funilaria convencional com massa plástica, atuamos milimetricamente por trás da chapa, restaurando o metal sem qualquer intervenção química.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="card-interactive p-6 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-inner">
+                <span class="material-symbols-outlined text-[30px]">workspace_premium</span>
+              </div>
+              <div class="space-y-2">
+                <span class="font-display font-semibold text-xs text-outline uppercase tracking-wider">01. Integridade</span>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Preservação do Valor de Mercado</h3>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Mantém a pintura original de fábrica (OEM), prevenindo desvalorizações na tabela FIPE e mantendo o histórico intacto em vistorias cautelares.
+                </p>
+              </div>
+            </div>
+            <div class="pt-6 flex items-center gap-1.5 text-primary font-display font-semibold text-xs uppercase tracking-wide">
+              <span>Originalidade Intacta</span>
+              <span class="material-symbols-outlined text-[16px]">check_circle</span>
+            </div>
+          </div>
+
+          <div class="card-interactive p-6 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-inner">
+                <span class="material-symbols-outlined text-[30px]">avg_pace</span>
+              </div>
+              <div class="space-y-2">
+                <span class="font-display font-semibold text-xs text-outline uppercase tracking-wider">02. Tempo Otimizado</span>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Agilidade Máxima e Prazos Curtos</h3>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  A maioria das avarias pontuais é resolvida no mesmo dia ou em prazos recordes, sem a espera de semanas de processos de secagem e estufa.
+                </p>
+              </div>
+            </div>
+            <div class="pt-6 flex items-center gap-1.5 text-primary font-display font-semibold text-xs uppercase tracking-wide">
+              <span>Rapidez Comprovada</span>
+              <span class="material-symbols-outlined text-[16px]">check_circle</span>
+            </div>
+          </div>
+
+          <div class="card-interactive p-6 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform shadow-inner">
+                <span class="material-symbols-outlined text-[30px]">battery_charging_full</span>
+              </div>
+              <div class="space-y-2">
+                <span class="font-display font-semibold text-xs text-tertiary uppercase tracking-wider">03. High-Tech</span>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Carros Elétricos &amp; Híbridos</h3>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Procedimentos homologados para desamassar BYD (Dolphin, Seal, Song), Volvo e Tesla sem intervenção na fiação de alta voltagem ou módulos de bateria.
+                </p>
+              </div>
+            </div>
+            <div class="pt-6 flex items-center gap-1.5 text-tertiary font-display font-semibold text-xs uppercase tracking-wide">
+              <span>Protocolo EV Seguro</span>
+              <span class="material-symbols-outlined text-[16px]">check_circle</span>
+            </div>
+          </div>
+
+          <div class="card-interactive p-6 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-inner">
+                <span class="material-symbols-outlined text-[30px]">handshake</span>
+              </div>
+              <div class="space-y-2">
+                <span class="font-display font-semibold text-xs text-outline uppercase tracking-wider">04. Ética</span>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Transparência &amp; Honestidade</h3>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Orçamentos detalhados com total clareza antes de iniciar. Sem cobranças ocultas, valor justo e respeito absoluto pelo proprietário.
+                </p>
+              </div>
+            </div>
+            <div class="pt-6 flex items-center gap-1.5 text-primary font-display font-semibold text-xs uppercase tracking-wide">
+              <span>Mais de 290 Avaliações 5★</span>
+              <span class="material-symbols-outlined text-[16px]">check_circle</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO: NOSSOS SERVIÇOS PREMIUM (CATÁLOGO) -->
+    <section id="especialidades" class="w-full bg-surface-container-lowest px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto space-y-12">
+        
+        <div class="flex flex-col items-center text-center space-y-3 max-w-3xl mx-auto">
+          <span class="font-display font-bold text-xs sm:text-sm text-primary uppercase tracking-widest">Catálogo de Alta Performance</span>
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-on-surface">Serviços Especializados em Funilaria Artesanal</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant">
+            Soluções desenvolvidas para atender desde pequenas marcas de portas em condomínios até desastres severos de granizo em veículos de colecionador.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Service 01 -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">01 / TÉCNICA PRINCIPAL</span>
+                <span class="material-symbols-outlined text-outline">build</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Martelinho de Ouro DSP (Paintless Dent Repair)</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Restauração de mossas, batidas de porta e pequenos impactos através de hastes especiais e iluminação refratária de precisão.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Sem massa</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Sem repintura</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Rápido</span>
+              </div>
+            </div>
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20Martelinho%20de%20Ouro%20DSP" 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-display font-semibold text-xs sm:text-sm group">
+              <span>Enviar foto desta avaria no WhatsApp</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">02 / CASOS CLIMÁTICOS</span>
+                <span class="material-symbols-outlined text-outline">grain</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Chuva de Granizo (Desamassamento Completo)</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Especialistas em Curitiba no desamassamento de dezenas ou centenas de marcas no teto, capô e colunas sem substituir nem repintar as chapas originais.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Capô &amp; Teto</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Atende Seguradoras</span>
+              </div>
+            </div>
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20meu%20carro%20sofreu%20danos%20por%20chuva%20de%20granizo.%20Como%20funciona%20o%20or%C3%A7amento%3F" 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-display font-semibold text-xs sm:text-sm group">
+              <span>Enviar foto desta avaria no WhatsApp</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">03 / ALTA COMPLEXIDADE</span>
+                <span class="material-symbols-outlined text-outline">polyline</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Recuperação de Vincos e Linhas de Carroceria</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Recomposição exata de nervuras e vincos aerodinâmicos complexos onde outras oficinas recomendariam corte de chapa ou funilaria pesada.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Vincos Duplos</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Alinhamento 100%</span>
+              </div>
+            </div>
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20tenho%20um%20vinco%20amassado%20na%20porta%2Flateral%2C%20gostaria%20de%20avaliar" 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-display font-semibold text-xs sm:text-sm group">
+              <span>Enviar foto desta avaria no WhatsApp</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">04 / ESTÉTICA TÉCNICA</span>
+                <span class="material-symbols-outlined text-outline">auto_fix_high</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Micropintura &amp; Polimento de Alta Performance</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Correção milimétrica de riscos profundos sem necessidade de pintar a peça inteira, seguido de polimento técnico que espelha o verniz.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Pintura localizada</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Brilho espelhado</span>
+              </div>
+            </div>
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20micropintura%20e%20polimento%20t%C3%A9cnico" 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-display font-semibold text-xs sm:text-sm group">
+              <span>Enviar foto desta avaria no WhatsApp</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Service 05 -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">05 / MATERIAIS NOBRES</span>
+                <span class="material-symbols-outlined text-outline">layers</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Peças em Alumínio &amp; Aços de Alta Resistência</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                O alumínio não tem memória elástica como o aço comum. Dominamos a física térmica e mecânica exigida para remodelar carrocerias de luxo.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Audi • BMW • Porsche</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Trabalho a quente</span>
+              </div>
+            </div>
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20meu%20carro%20possui%20pe%C3%A7as%20em%20alum%C3%ADnio%2C%20gostaria%20de%20or%C3%A7amento" 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-display font-semibold text-xs sm:text-sm group">
+              <span>Enviar foto desta avaria no WhatsApp</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Service 06 -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">06 / CORPORATIVO</span>
+                <span class="material-symbols-outlined text-outline">apartment</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Concessionárias, Frotas &amp; Veículos Premium</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Soluções sob medida para frotas corporativas, revendas de alto padrão e concessionárias autorizadas que buscam padrão de vitrine.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Prazos Expressos</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-xs font-medium text-on-surface-variant">Condições B2B</span>
+              </div>
+            </div>
+            <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20represento%20uma%20concession%C3%A1ria%2Ffrota%20e%20gostaria%20de%20uma%20proposta" 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-display font-semibold text-xs sm:text-sm group">
+              <span>Falar com especialista corporativo</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO: ANTES & DEPOIS INTERATIVO -->
+    <section id="antes-e-depois" class="w-full bg-surface px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto space-y-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="space-y-2 max-w-2xl">
+            <span class="font-display font-bold text-xs sm:text-sm text-primary uppercase tracking-widest">Transformações Comprovadas</span>
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-on-surface">Galeria de Resultados: Da Batida à Perfeição de Fábrica</h2>
+          </div>
+          <div class="flex items-center gap-2 text-on-surface-variant text-xs sm:text-sm">
+            <span class="material-symbols-outlined text-tertiary">verified</span>
+            <span>Todos os casos documentados em nossa oficina em Curitiba</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Case 1: BYD Dolphin Elétrico -->
+          <div class="card-interactive flex flex-col">
+            <div class="before-after-container aspect-[4/3]">
+              <div class="before-after-img-wrap">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeBoM6KLuVY8OdrE_D81DjVOxrX9BxXIVhAuZxvx-GuVLmhFGtYeeK9CBHy7WNfAfzpq7oQ2zZsFYiwNDuyDWKUFZ8WDPhSwTDX_bRXabA_rUtOwqcne4xFFpoaujdqNDv673Y9vyGthAz0DKLYYwSjeqtBAdvZqHtFOf7QGJlCI_DEHxakP3wterQcMsKVl7dcng6wlS3R7sfzzPU2gjQCQZ8cmx5AizIRl2OxAFtcXXIVlMdVNJ5')"></div>
+                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary text-[11px] font-display font-bold uppercase z-0">Depois (100% DSP)</span>
+              </div>
+              
+              <div class="before-after-overlay">
+                <div class="w-full h-full bg-cover bg-center filter contrast-125" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnGIo9Ya8-qr1YUiDgiaoWIjO664tFJr-M2Sh4NovuFhkkAKwaJZV_hMFtG5ah2q6kg4PnUnWrDeV4rq3Z2Z99mXvG_T8TWX56Uki3Z6c2tP9rSgeZLopneMBV8DxMney1UG3rRKbdjPlcGM8EjvkSrLRj8XQCiDwjvTAutfconLPRq918bnySGpiUR42496T5PtB5Aq-g5iTBp0LGGODye3eAyvrY5rf35BliGT4gk6DvE7m54Kb5')"></div>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 text-on-surface text-[11px] font-display font-bold uppercase">Antes (Avaria)</span>
+              </div>
+
+              <div class="before-after-handle">
+                <span class="material-symbols-outlined text-[18px]">code</span>
+              </div>
+            </div>
+
+            <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <h3 class="font-display font-bold text-lg text-on-surface">BYD Dolphin Elétrico</h3>
+                  <span class="font-display font-bold text-xs text-tertiary bg-surface-container px-2.5 py-1 rounded-full">Prazo: 4 Dias</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant pt-2 leading-relaxed">
+                  Dano pronunciado na lateral direita posterior com vinco de tensão. Restaurado sem lixar nem repintar, preservando garantia de fábrica.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-outline text-xs">
+                <span>Cliente: Pedro Canezin</span>
+                <span class="text-primary font-semibold">Originalidade Mantida</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2: BMW Série 3 M Sport -->
+          <div class="card-interactive flex flex-col">
+            <div class="before-after-container aspect-[4/3]">
+              <div class="before-after-img-wrap">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB88aMfNgg5f7RdWXXlYlIGrVvE0iOVhxBVcRuC83Uqty81gxbmfdyEMphJ6tzuoG8HSbBrxALZ5qzrAocfKWsClzyruxzhwYsLRxtMsB9EsODK_hGwW680_kdZmDIdpqf4ermxGfIovOj1W-qbPLUvzf_E7iJ6gmKKh6fveJUzXhugD1pufsy5lOb1WzJ5titfHoC8dUyZjpIUXcyibPlwtiw_AIToRDf4k4qldT_Dp7-QQygWlUc3')"></div>
+                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary text-[11px] font-display font-bold uppercase z-0">Depois (100% DSP)</span>
+              </div>
+              
+              <div class="before-after-overlay">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDP3K140QJJjAlvOEUXXDMTSfb9pKMkZqWlLMDwiUhr-lIjzjDaX4UfzUUedCtwtsY1F-A4yxtEvoPz-Ea9oFeoLAfhzQ7BVEpBLhXA7JkTIscSmiy4gw_NmMD6FArmQnVvDSsBxOWLJQXlGTpUg8NI0pnfFDMEHtwd7GPOyaL2-n3zsH9NBIuUoVmF0062o7a5oCAmwInO4RcTxHPNZt4UbEV7Xzhac6vpvEMqeIPXYlYtlKcpUDJt')"></div>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 text-on-surface text-[11px] font-display font-bold uppercase">Antes (Batida)</span>
+              </div>
+
+              <div class="before-after-handle">
+                <span class="material-symbols-outlined text-[18px]">code</span>
+              </div>
+            </div>
+
+            <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <h3 class="font-display font-bold text-lg text-on-surface">BMW Série 3 M Sport</h3>
+                  <span class="font-display font-bold text-xs text-tertiary bg-surface-container px-2.5 py-1 rounded-full">Prazo: 24h</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant pt-2 leading-relaxed">
+                  Batida de porta de estacionamento atingindo nervura de alta pressão. Alinhamento térmico micrométrico sem abertura de forração complexa.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-outline text-xs">
+                <span>Porta Dianteira Esquerda</span>
+                <span class="text-primary font-semibold">Sem Repintura</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3: Porsche Macan GTS Granizo -->
+          <div class="card-interactive flex flex-col">
+            <div class="before-after-container aspect-[4/3]">
+              <div class="before-after-img-wrap">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRxEt9sdOazN6d4rgZRoIYD1x6CWilRmQTAapoqIl-fFMluVOCpzNxthOIBd9gwRpQW1yqBdZlL8-Gh7TaAzkgR11feRltSiPnWb53RNkpWX_52Em7j1SerKs0Jjemx7I-Ov967EGUagT54jmT9jgLBM7tzV8mAmvbK7J8rFYFcyphj2vdcrH6kxjZtQSyN352tJsdzpSnYTPDZzCTIhlVn3wLojPcrdMPROknWhnK3UZ9BlzG01g8')"></div>
+                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary text-[11px] font-display font-bold uppercase z-0">Depois (100% DSP)</span>
+              </div>
+              
+              <div class="before-after-overlay">
+                <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChYuZEA_ZBnXV51Mexs0iF0DEUU3AKVDTs2ZFbhxuD01SKQC0LtVg6uNc3kHTTn7WCSjJ2wLNj7mPse5DuhSqcHXeCBgzE8i7CpoXIlNTTdnOMgSpAsPh2XtGOU24s1p7qwgcV48-DxeS3wG3nEjb5a5yx66ztuIIDiGSz_ndt-2AjWTgmbBiA316w-K3vqRhKJnipMIJbQ0ztWmi8LwAMBxrHQTPehur-ZXrsM8idb9VOgMj402T2')"></div>
+                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 text-on-surface text-[11px] font-display font-bold uppercase">Antes (Granizo)</span>
+              </div>
+
+              <div class="before-after-handle">
+                <span class="material-symbols-outlined text-[18px]">code</span>
+              </div>
+            </div>
+
+            <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <h3 class="font-display font-bold text-lg text-on-surface">Porsche Macan GTS</h3>
+                  <span class="font-display font-bold text-xs text-tertiary bg-surface-container px-2.5 py-1 rounded-full">Capô em Alumínio</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant pt-2 leading-relaxed">
+                  Tempestade de granizo em Curitiba com 42 impactos no capô e teto solar. Recuperado integralmente por ventosas e tração milimétrica.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/5 flex items-center justify-between text-outline text-xs">
+                <span>Recuperação Térmica</span>
+                <span class="text-primary font-semibold">Nota Máxima em Vistoria</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO: AVALIAÇÕES GOOGLE MAPS (4.9 ★) -->
+    <section id="avaliacoes" class="w-full bg-surface-container-lowest px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto space-y-12">
+        
+        <div class="card-interactive p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-4 space-y-2">
+            <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">Transparência &amp; Confiança</span>
+            <div class="flex items-center gap-3">
+              <span class="font-display text-4xl sm:text-5xl font-extrabold text-on-surface leading-none">4.9</span>
+              <div>
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-[20px]">star</span>
+                </div>
+                <span class="text-xs text-on-surface-variant font-medium">294 avaliações reais no Google</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-outline">
+              A oficina de martelinho de ouro mais bem avaliada da região central de Curitiba.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 space-y-3">
+            <blockquote class="text-sm sm:text-base text-on-surface italic leading-relaxed">
+              “Sem dúvidas o melhor de Curitiba e região, trabalho impecável, preço justo e compromisso com o prazo!”
+            </blockquote>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-semibold text-primary">#nota20 (14)</span>
+              <span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-semibold text-on-surface">#equipe (13)</span>
+              <span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-semibold text-tertiary">#honesto (12)</span>
+              <span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-semibold text-on-surface">#orçamento (9)</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3 flex lg:justify-end">
+            <a href="https://maps.google.com/?cid=f3martelinho" target="_blank" rel="noopener noreferrer" 
+               class="w-full lg:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-sm font-semibold border border-white/5 transition-colors shadow">
+              <span class="material-symbols-outlined text-[18px] text-primary">open_in_new</span>
+              <span>Ver no Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Review 1: Allan Defante -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                </div>
+                <span class="font-display font-bold text-xs text-tertiary uppercase">Local Guide</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                “Tive uma ótima experiência com a oficina. O atendimento foi excelente: todos foram educados, claros e transparentes, com um preço justo e um prazo que foi cumprido direitinho. O serviço ficou impecável...”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+              <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-display text-xs text-primary font-bold">AD</div>
+              <div>
+                <span class="font-display font-semibold text-xs sm:text-sm text-on-surface block">Allan Defante</span>
+                <span class="text-[11px] text-outline">Local Guide · 41 avaliações</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2: Allan Gabriel -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                </div>
+                <span class="font-display font-bold text-xs text-outline uppercase">Verificado</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                “O serviço ficou maravilhoso, deixou meu carro zero km novamente, com o atendimento nota 10 e valor justo! Recomendo a todos de Curitiba.”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+              <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-display text-xs text-primary font-bold">AG</div>
+              <div>
+                <span class="font-display font-semibold text-xs sm:text-sm text-on-surface block">Allan Gabriel</span>
+                <span class="text-[11px] text-outline">9 avaliações no Google</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3: Pedro Canezin -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                </div>
+                <span class="font-display font-bold text-xs text-tertiary uppercase">Caso BYD</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                “Levamos um BYD Dolphin para reparo da lateral direita posterior. Fui muito bem atendido e em 4 dias meu veículo estava pronto e em perfeito estado. Além do ótimo trabalho, o valor também ficou acessível e negociável. Recomendo.”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+              <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-display text-xs text-primary font-bold">PC</div>
+              <div>
+                <span class="font-display font-semibold text-xs sm:text-sm text-on-surface block">Pedro Canezin</span>
+                <span class="text-[11px] text-outline">4 avaliações no Google</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4: Cliente Verificado -->
+          <div class="card-interactive p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                </div>
+                <span class="font-display font-bold text-xs text-outline uppercase">Pontualidade</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                “O serviço ficou ótimo e o carro foi entregue exatamente no prazo estabelecido! Equipe muito atenciosa desde o primeiro contato pelo WhatsApp até a retirada.”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+              <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center font-display text-xs text-primary font-bold">CV</div>
+              <div>
+                <span class="font-display font-semibold text-xs sm:text-sm text-on-surface block">Cliente Verificado</span>
+                <span class="text-[11px] text-outline">Google Maps Review</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SEÇÃO: COMO FUNCIONA O ORÇAMENTO RÁPIDO (3 PASSOS) -->
+    <section class="w-full bg-surface px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto space-y-12">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="font-display font-bold text-xs sm:text-sm text-primary uppercase tracking-widest">Sem Burocracia</span>
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-on-surface">Como Funciona Seu Orçamento Ágil</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant">
+            Você não precisa perder tempo se deslocando até a oficina apenas para saber se tem conserto. Faça uma pré-avaliação em minutos.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="card-interactive p-6 sm:p-8 space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-primary text-on-primary font-display text-xl font-bold flex items-center justify-center shadow-lg">1</div>
+            <div class="space-y-2">
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Fotografe ou Grave a Avaria</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Tire 2 ou 3 fotos em diferentes ângulos da lataria e, se possível, faça um vídeo curto sob a luz do dia mostrando o reflexo no amassado.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-outline text-xs pt-2">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+              <span>Fotos de perto e com reflexo</span>
+            </div>
+          </div>
+
+          <div class="card-interactive p-6 sm:p-8 space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary font-display text-xl font-bold flex items-center justify-center shadow-lg">2</div>
+            <div class="space-y-2">
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Envie para Nosso WhatsApp</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Envie as mídias junto com o modelo e ano do seu carro para nosso canal direto no <strong>(41) 3079-3755</strong>.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-tertiary text-xs pt-2">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+              <span>Atendimento humano e rápido</span>
+            </div>
+          </div>
+
+          <div class="card-interactive p-6 sm:p-8 space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary font-display text-xl font-bold flex items-center justify-center shadow-lg">3</div>
+            <div class="space-y-2">
+              <h3 class="font-display font-bold text-lg sm:text-xl text-on-surface">Diagnóstico &amp; Agendamento</h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Receba a viabilidade técnica, estimativa de valor e previsão de tempo de conclusão. Agende o dia mais conveniente para deixar seu carro.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-primary text-xs pt-2">
+              <span class="material-symbols-outlined text-[18px]">event_available</span>
+              <span>Sem surpresas no valor final</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center pt-4">
+          <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20quero%20enviar%20as%20fotos%20do%20meu%20carro%20para%20or%C3%A7amento%20r%C3%A1pido" 
+             target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2.5 px-8 py-4 rounded-full btn-maps-premium text-sm sm:text-base font-bold shadow-lg">
+            <span class="material-symbols-outlined text-[20px]">send</span>
+            <span>Iniciar Orçamento Rápido Agora</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. SEÇÃO: LOCALIZAÇÃO, MAPA & HORÁRIOS -->
+    <section id="localizacao-e-horarios" class="w-full bg-surface-container-lowest px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto space-y-12">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <div class="lg:col-span-6 space-y-6 flex flex-col justify-between">
+            <div class="space-y-6">
+              
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border border-white/5 js-live-status">
+                <span class="status-indicator-dot"></span>
+                <span class="text-xs font-semibold text-tertiary js-status-text">Aberto Hoje até às 18h00</span>
+              </div>
+
+              <div class="space-y-2">
+                <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-on-surface">Localização Central de Fácil Acesso em Curitiba</h2>
+                <p class="text-sm sm:text-base text-on-surface-variant">
+                  Estrutura pensada para sua comodidade, no coração do Centro da cidade com estacionamento próprio e recepção climatizada.
+                </p>
+              </div>
+
+              <div class="card-interactive p-6 space-y-4">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0 shadow-inner">
+                    <span class="material-symbols-outlined text-[26px]">location_on</span>
+                  </div>
+                  <div>
+                    <span class="font-display font-bold text-base sm:text-lg text-on-surface block">F3 Martelinho de Ouro</span>
+                    <p class="text-xs sm:text-sm text-on-surface-variant pt-1 leading-relaxed">
+                      Rua João Negrão, 755 - Centro<br/>
+                      Curitiba - PR, CEP 80010-200<br/>
+                      <span class="text-outline text-xs">Código Plus: HP7P+PF Centro, Curitiba - PR</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 pt-2">
+                  <a href="https://maps.google.com/?q=Rua+Joao+Negrao+755+Centro+Curitiba" target="_blank" rel="noopener noreferrer" 
+                     class="inline-flex items-center gap-2 px-5 py-3 rounded-full btn-maps-premium text-xs sm:text-sm font-bold">
+                    <span class="material-symbols-outlined text-[18px]">directions</span>
+                    <span>Traçar Rota no Google Maps</span>
+                  </a>
+                  <a href="tel:4130793755" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-xs sm:text-sm font-semibold transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">call</span>
+                    <span>(41) 3079-3755</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-interactive p-6 space-y-3">
+                <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">Horário de Funcionamento</span>
+                <div class="space-y-2 pt-1 text-xs sm:text-sm">
+                  <div class="flex items-center justify-between py-1.5 border-b border-white/5 text-on-surface">
+                    <span class="font-medium">Segunda a Sexta-feira:</span>
+                    <span class="text-primary font-bold">08:00 às 18:00</span>
+                  </div>
+                  <div class="flex items-center justify-between py-1.5 border-b border-white/5 text-on-surface-variant">
+                    <span class="font-medium">Sábado:</span>
+                    <span class="text-outline">Fechado — Atendimento com Hora Marcada</span>
+                  </div>
+                  <div class="flex items-center justify-between py-1.5 text-outline">
+                    <span>Domingo:</span>
+                    <span>Fechado</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 pt-2">
+              <div class="card-interactive p-3 text-center">
+                <span class="material-symbols-outlined text-primary text-[22px] block mb-1">local_parking</span>
+                <span class="font-display font-semibold text-xs text-on-surface block">Estacionamento Próprio</span>
+              </div>
+              <div class="card-interactive p-3 text-center">
+                <span class="material-symbols-outlined text-primary text-[22px] block mb-1">coffee</span>
+                <span class="font-display font-semibold text-xs text-on-surface block">Espaço Café &amp; Wi-Fi</span>
+              </div>
+              <div class="card-interactive p-3 text-center">
+                <span class="material-symbols-outlined text-primary text-[22px] block mb-1">lock</span>
+                <span class="font-display font-semibold text-xs text-on-surface block">Oficina Monitorada</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="lg:col-span-6 map-interactive-wrapper border border-white/10 shadow-2xl">
+            <div class="w-full h-full min-h-[420px] bg-cover bg-center map-zoom-target" 
+                 style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaQfm3iYGOQky4PmYVJhYMPo8qzjiR8XbpftKhW8eqje41LLtcEJkgPWKk_QTievTr3BOyKQygkkxN9pndQEQDvyv2vjetAvRkN1EmLmfKjWCeecAFZYQ5Hto8XySc9hQOg-UmmhN3HNH2D7wYTGmHajSSIuB9slSYPJppGhaYNdxsf54Aj2_ggNPqxy27-A6jC236APuOmel7kgFFx4jXrat6E1pCkJ5H5N4cyS_J21LFkN3fDUIt')">
+            </div>
+            
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md border border-white/10 flex items-center justify-between shadow-xl">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">store</span>
+                </div>
+                <div>
+                  <span class="font-display font-bold text-sm text-on-surface block">F3 Martelinho de Ouro</span>
+                  <span class="text-xs text-outline">R. João Negrão, 755 - Centro</span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/?q=Rua+Joao+Negrao+755+Centro+Curitiba" target="_blank" rel="noopener noreferrer" 
+                 class="p-2.5 rounded-full bg-primary text-on-primary hover:scale-105 transition-transform" title="Abrir no Google Maps" aria-label="Abrir mapa">
+                <span class="material-symbols-outlined text-[20px]">near_me</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. SEÇÃO: CTA FINAL DE ALTA CONVERSÃO -->
+    <section class="w-full bg-surface-container-lowest px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="max-w-site mx-auto">
+        <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-8 sm:p-12 lg:p-16 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]">
+          
+          <div class="pointer-events-none absolute -right-20 -bottom-20 w-80 sm:w-96 h-80 sm:h-96 bg-primary/15 blur-[100px] rounded-full"></div>
+          <div class="pointer-events-none absolute -left-20 -top-20 w-72 sm:w-80 h-72 sm:h-80 bg-tertiary/10 blur-[100px] rounded-full"></div>
+
+          <div class="relative z-10 max-w-3xl mx-auto text-center space-y-6">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-highest border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+              <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">Garantia de Qualidade Máxima</span>
+            </div>
+
+            <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">
+              Seu carro impecável como saiu da concessionária.
+            </h2>
+
+            <p class="text-sm sm:text-base lg:text-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+              Não comprometa a lataria do seu veículo com massa ou repinturas de tonalidade errada. Fale agora mesmo com nossa equipe e receba um orçamento personalizado.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+              
+              <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20com%20a%20equipe%20da%20F3%20Martelinho" 
+                 target="_blank" rel="noopener noreferrer" 
+                 class="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full btn-whatsapp-premium text-sm sm:text-base font-bold shadow-[0_0_35px_rgba(37,211,102,0.45)]">
+                <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>Falar no WhatsApp (41) 3079-3755</span>
+              </a>
+
+              <a href="tel:4130793755" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-sm sm:text-base font-semibold border border-white/5 transition-colors">
+                <span class="material-symbols-outlined text-[18px]">call</span>
+                <span>Ligar Agora: (41) 3079-3755</span>
+              </a>
+
+            </div>
+
+            <div class="pt-6 flex flex-wrap items-center justify-center gap-4 text-outline text-xs sm:text-sm">
+              <span class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                Atendimento em Horário Comercial
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                Centro de Curitiba
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                Estacionamento no Local
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       BOTÃO FLUTUANTE WHATSAPP (SAFE AREA & RESPONSIVO)
+       ========================================================================== -->
+  <aside class="fixed bottom-6 right-6 z-40 flex items-center floating-cta-wrap">
+    <a href="https://wa.me/554130793755?text=Ol%C3%A1%2C%20estou%20no%20site%20e%20gostaria%20de%20um%20or%C3%A7amento" 
+       target="_blank" rel="noopener noreferrer" 
+       class="group flex items-center gap-3 pl-4 pr-1.5 py-1.5 rounded-full bg-surface-container-high/90 backdrop-blur-md border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] transition-all duration-300"
+       aria-label="Falar com especialista no WhatsApp">
+      <div class="hidden sm:flex flex-col text-right">
+        <span class="font-display font-bold text-[10px] text-tertiary uppercase tracking-wider">Online Agora</span>
+        <span class="font-display font-semibold text-xs text-on-surface">Fale com Especialista</span>
+      </div>
+      <div class="w-12 h-12 rounded-full btn-whatsapp-premium flex items-center justify-center relative shadow-[0_0_18px_rgba(37,211,102,0.4)] transition-transform duration-300 group-hover:scale-105">
+        <span class="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-tertiary ring-2 ring-surface animate-ping"></span>
+        <span class="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-tertiary ring-2 ring-surface"></span>
+        <svg class="w-6 h-6 fill-current text-[#04240f]" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+      </div>
+    </a>
+  </aside>
+
+  <!-- ==========================================================================
+       FOOTER (RODAPÉ)
+       ========================================================================== -->
+  <footer class="w-full bg-[#0b0e14] text-on-surface-variant border-t border-white/5 pt-16 pb-12">
+    <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-surface-container-high border border-primary/30 flex items-center justify-center p-1 shadow-[0_0_12px_rgba(242,202,80,0.2)]">
+            <svg class="w-full h-full" viewBox="0 0 70 70" fill="none">
+              <polygon points="15,8 55,8 65,35 55,62 15,62 5,35" stroke="#f2ca50" stroke-width="3" fill="#131722" />
+              <path d="M22,20 L48,20 M22,34 L42,34 M22,20 L22,50" stroke="#f2ca50" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="font-display font-bold text-lg text-on-surface uppercase">F3 Martelinho</span>
+        </div>
+        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+          Referência em desamassamento sem pintura (PDR), micro-funilaria e restauração estética automotiva de alto padrão em Curitiba.
+        </p>
+        <div class="inline-flex items-center gap-3 p-3 rounded-xl bg-surface-container-low border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[20px]">star</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-1">
+              <span class="font-display font-bold text-sm text-on-surface leading-none">4.9</span>
+              <div class="flex text-primary">
+                <span class="material-symbols-outlined text-[14px]">star</span>
+                <span class="material-symbols-outlined text-[14px]">star</span>
+                <span class="material-symbols-outlined text-[14px]">star</span>
+                <span class="material-symbols-outlined text-[14px]">star</span>
+                <span class="material-symbols-outlined text-[14px]">star</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-on-surface-variant">294 avaliações no Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">Navegação Rápida</span>
+        <ul class="space-y-2 text-xs sm:text-sm">
+          <li><a href="#inicio" class="text-on-surface-variant hover:text-primary transition-colors">Início</a></li>
+          <li><a href="#especialidades" class="text-on-surface-variant hover:text-primary transition-colors">Especialidades</a></li>
+          <li><a href="#antes-e-depois" class="text-on-surface-variant hover:text-primary transition-colors">Galeria Antes &amp; Depois</a></li>
+          <li><a href="#diferenciais" class="text-on-surface-variant hover:text-primary transition-colors">Nossos Diferenciais</a></li>
+          <li><a href="#avaliacoes" class="text-on-surface-variant hover:text-primary transition-colors">Depoimentos de Clientes</a></li>
+          <li><a href="#localizacao-e-horarios" class="text-on-surface-variant hover:text-primary transition-colors">Localização &amp; Horários</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">Unidade Centro Curitiba</span>
+        <div class="space-y-3 text-xs sm:text-sm">
+          <div class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">location_on</span>
+            <p class="text-on-surface-variant">
+              <strong class="text-on-surface block font-medium">Endereço:</strong>
+              R. João Negrão, 755 - Centro<br/>
+              Curitiba - PR, CEP 80010-200
+            </p>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">schedule</span>
+            <p class="text-on-surface-variant">
+              <strong class="text-on-surface block font-medium">Horário de Atendimento:</strong>
+              Segunda a Sexta: 08h00 às 18h00<br/>
+              Sábados: Mediante agendamento
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <span class="font-display font-bold text-xs text-primary uppercase tracking-wider">Contato Direto</span>
+        <p class="text-xs sm:text-sm text-on-surface-variant">
+          Agende sua avaliação técnica presencial ou envie fotos para pré-orçamento.
+        </p>
+        <div class="space-y-2 text-xs sm:text-sm">
+          <a href="tel:4130793755" class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-primary text-[18px]">call</span>
+            <span>(41) 3079-3755</span>
+          </a>
+          <a href="https://wa.me/554130793755" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-tertiary hover:text-white transition-colors">
+            <svg class="w-4 h-4 fill-current text-tertiary" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>(41) 3079-3755 (WhatsApp)</span>
+          </a>
+          <a href="https://www.instagram.com/martelinhodeouro.f3/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-on-surface hover:text-[#e1306c] transition-colors">
+            <svg class="w-4 h-4 fill-current text-[#e1306c]" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram: @martelinhodeouro.f3</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-outline">
+      <span>© 2026 F3 Martelinho de Ouro. Todos os direitos reservados. CNPJ Credenciado.</span>
+      <div class="flex items-center gap-4">
+        <span>Curitiba - Paraná</span>
+        <span>•</span>
+        <span>Excelência em Martelinho de Ouro DSP</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT COMPLETO INLINE PARA ZERO ERROS 404 NO DEPLOY -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initLiveBusinessHours();
+      initBeforeAfterSliders();
+      initHero3DTilt();
+      initMobileMenu();
+      initScrollSpy();
+    });
+
+    function initLiveBusinessHours() {
+      const statusBadges = document.querySelectorAll('.js-live-status');
+      if (!statusBadges.length) return;
+
+      function updateStatus() {
+        const now = new Date();
+        const curitibaTime = new Intl.DateTimeFormat('pt-BR', {
+          timeZone: 'America/Sao_Paulo',
+          hour: 'numeric',
+          minute: 'numeric',
+          weekday: 'long',
+          hour12: false
+        }).formatToParts(now);
+
+        let hour = 0;
+        let weekday = '';
+
+        curitibaTime.forEach(part => {
+          if (part.type === 'hour') hour = parseInt(part.value, 10);
+          if (part.type === 'weekday') weekday = part.value.toLowerCase();
+        });
+
+        const isWeekend = weekday.includes('sábado') || weekday.includes('sabado') || weekday.includes('domingo');
+        const isSaturday = weekday.includes('sábado') || weekday.includes('sabado');
+        const isWeekday = !isWeekend;
+        
+        const isOpen = isWeekday && hour >= 8 && hour < 18;
+
+        statusBadges.forEach(badge => {
+          const dot = badge.querySelector('.status-indicator-dot') || badge.querySelector('.animate-pulse');
+          const text = badge.querySelector('.js-status-text');
+          if (!text) return;
+
+          if (isOpen) {
+            text.textContent = 'Aberto agora • Atendimento Imediato';
+            if (dot) dot.className = 'status-indicator-dot';
+          } else if (isSaturday) {
+            text.textContent = 'Atendimento com Hora Marcada (Sáb)';
+            if (dot) dot.className = 'w-2 h-2 rounded-full bg-secondary inline-block mr-1';
+          } else {
+            text.textContent = 'Fechado no momento • WhatsApp 24h';
+            if (dot) dot.className = 'w-2 h-2 rounded-full bg-outline inline-block mr-1';
+          }
+        });
+      }
+
+      updateStatus();
+      setInterval(updateStatus, 60000);
+    }
+
+    function initBeforeAfterSliders() {
+      const sliders = document.querySelectorAll('.before-after-container');
+
+      sliders.forEach(container => {
+        const overlay = container.querySelector('.before-after-overlay');
+        const handle = container.querySelector('.before-after-handle');
+        if (!overlay || !handle) return;
+
+        let isDragging = false;
+
+        function setPosition(xPos) {
+          const rect = container.getBoundingClientRect();
+          let offsetX = xPos - rect.left;
+          let percentage = (offsetX / rect.width) * 100;
+
+          if (percentage < 5) percentage = 5;
+          if (percentage > 95) percentage = 95;
+
+          overlay.style.width = `${percentage}%`;
+          handle.style.left = `${percentage}%`;
+        }
+
+        function onPointerMove(e) {
+          if (!isDragging) return;
+          const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+          requestAnimationFrame(() => setPosition(clientX));
+        }
+
+        function startDrag(e) {
+          isDragging = true;
+          const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+          setPosition(clientX);
+        }
+
+        function stopDrag() {
+          isDragging = false;
+        }
+
+        container.addEventListener('mousedown', startDrag);
+        window.addEventListener('mousemove', onPointerMove);
+        window.addEventListener('mouseup', stopDrag);
+
+        container.addEventListener('touchstart', startDrag, { passive: true });
+        window.addEventListener('touchmove', onPointerMove, { passive: true });
+        window.addEventListener('touchend', stopDrag);
+      });
+    }
+
+    function initHero3DTilt() {
+      const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!isFinePointer || prefersReduced) return;
+
+      const stage = document.querySelector('.hero-stage-3d');
+      const card = document.querySelector('.hero-card-tilt');
+      if (!stage || !card) return;
+
+      let ticking = false;
+
+      stage.addEventListener('mousemove', (e) => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const rect = stage.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = ((y - centerY) / centerY) * -6;
+            const rotateY = ((x - centerX) / centerX) * 6;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      stage.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    }
+
+    function initMobileMenu() {
+      const openBtn = document.getElementById('mobileMenuOpen');
+      const closeBtn = document.getElementById('mobileMenuClose');
+      const drawer = document.getElementById('mobileDrawer');
+      const navLinks = drawer ? drawer.querySelectorAll('a') : [];
+
+      if (!openBtn || !closeBtn || !drawer) return;
+
+      function openMenu() {
+        drawer.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenu() {
+        drawer.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      openBtn.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+          closeMenu();
+        }
+      });
+    }
+
+    function initScrollSpy() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+      if (!sections.length || !navLinks.length) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('text-primary', 'font-semibold');
+                link.classList.remove('text-on-surface-variant');
+              } else {
+                link.classList.remove('text-primary', 'font-semibold');
+                link.classList.add('text-on-surface-variant');
+              }
+            });
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+
+      sections.forEach(section => observer.observe(section));
+    }
+  </script>
+</body>
+</html>
